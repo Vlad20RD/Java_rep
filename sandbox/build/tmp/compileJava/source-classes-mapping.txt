@@ -1,2 +1,2 @@
-hello.java
- hello
+ru/stqa/pft/sandbox/hello.java
+ ru.stqa.pft.sandbox.hello
