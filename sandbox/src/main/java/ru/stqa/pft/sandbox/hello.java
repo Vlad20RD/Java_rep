@@ -1,17 +1,27 @@
 package ru.stqa.pft.sandbox;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class hello {
 	public static void main(String[] args){
-		System.out.println("Hello, world!!!");
-		
-		System.out.println("(Сложение) 2+2 = " + (2 + 2));
-		System.out.println("(Вычитание) 2-2 = " + (2 - 2));
-		System.out.println("(Умножение) 2*2 = " + (2 * 2));
-		System.out.println("(Деление) 2/2 = " + (2 / 2));
+	    String myName = "Vladlen";
+	    double a = 5, b = 7;
 
-		System.out.println("(Деление с плавающей точкой) 3/7 = " + (3.0 / 7.0));
+        System.out.println("Площадь квадрата = " + area(a));
+        System.out.println("Площадь прямоугольника = " + area(a, b));
 
-		System.out.println("Соеди" + "нение" + " строки");
-		System.out.println("Конкатенация строки и числа: " + "2" + 2);
+        name(myName);
 	}
+
+	public static double area(double a){
+	    return a*a;
+    }
+
+    public static double area(double a, double b){
+        return a*b;
+    }
+
+    public static void name(String n){
+	    System.out.println("Hi " + n + "!");
+    }
 }
