@@ -1,3 +1,17 @@
 apply plugin: 'java'
 apply plugin: 'application'
-mainClassName = 'hello'
+mainClassName = 'ru.stqa.pft.sandbox.hello'
+
+
+test {
+    useJUnitPlatform()
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.1.0'
+}
