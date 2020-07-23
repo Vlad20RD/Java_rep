@@ -7,16 +7,7 @@ public class hello {
 	    Square s = new Square(5);
 	    Rectangle r = new Rectangle(7, 5);
 
-        System.out.println("Площадь квадрата = " + area(s));
-        System.out.println("Площадь прямоугольника = " + area(r));
+        System.out.println("Площадь квадрата = " + s.area());
+        System.out.println("Площадь прямоугольника = " + r.area());
 	}
-
-	public static double area(Square s){
-	    return s.l * s.l;
-    }
-
-    public static double area(Rectangle r){
-        return r.a * r.b;
-    }
-
 }
