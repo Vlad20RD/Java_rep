@@ -19,15 +19,11 @@ public class ApplicationManager {
     private Map<String, Object> vars;
 
     public void init() {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Vlad20/Desktop/chrome_driver/chromedriver.exe");
-
         driver = new ChromeDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
 
         driver.get("http://addressbook/");
-        driver.manage().window().setSize(new Dimension(1055, 824));
-
         groupHelper = new GroupHelper(driver);
         navigationHelper = new NavigationHelper(driver);
         sessionHelper = new SessionHelper(driver);
