@@ -12,4 +12,13 @@ public class NavigationHelper extends HelperBase{
     public void goToGroupPage() {
        click(By.xpath("//a[contains(@href, \'group.php\')]"));
     }
+
+    public void goToContactCreation() {
+        click(By.xpath("//a[contains(@href, \'edit.php\')]"));
+    }
+
+
+    public void goToHomePage() {
+        click(By.xpath("//a[contains(@href, \'./\')]"));
+    }
 }
