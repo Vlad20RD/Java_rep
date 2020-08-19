@@ -8,6 +8,13 @@ public class GroupData {
     private final String header;
     private final String footer;
 
+    public GroupData(String name, String header, String footer) {
+        this.id = 0;
+        this.name = name;
+        this.header = header;
+        this.footer = footer;
+    }
+
     public GroupData(int id, String name, String header, String footer) {
         this.id = id;
         this.name = name;
@@ -15,19 +22,8 @@ public class GroupData {
         this.footer = footer;
     }
 
-    public GroupData(String name, String header, String footer) {
-        this.id = Integer.MAX_VALUE;
-        this.name = name;
-        this.header = header;
-        this.footer = footer;
-    }
-
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -42,6 +38,9 @@ public class GroupData {
         return footer;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @Override
     public boolean equals(Object o) {
