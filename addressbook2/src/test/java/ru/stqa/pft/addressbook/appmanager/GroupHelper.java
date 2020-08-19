@@ -68,7 +68,7 @@ public class GroupHelper extends HelperBase{
         List<WebElement> elements = driver.findElements(By.cssSelector("#content > form > input[type=checkbox]"));
         for(WebElement element : elements){
             String name = element.getText();
-            String id = element.getAttribute("value");
+            int id = Integer.parseInt(element.getAttribute("value"));
             GroupData group = new GroupData(id, name, null, null);
             groups.add(group);
         }

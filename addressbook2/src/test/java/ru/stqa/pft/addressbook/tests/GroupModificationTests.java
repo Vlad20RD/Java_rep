@@ -26,5 +26,9 @@ public class GroupModificationTests extends TestBase{
         List<GroupData> after = app.getGroupHelper().getGroupList();
         Assert.assertEquals(after.size(), before.size());
 
+//        before.remove(before.size() - 1);
+//        before.add(group);
+//        Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
+
     }
 }
