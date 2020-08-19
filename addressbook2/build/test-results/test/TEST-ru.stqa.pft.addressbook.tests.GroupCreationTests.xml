@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.GroupCreationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-08-19T09:52:37" hostname="LAPTOP-4A2JVML7" time="6.174">
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupCreationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-08-19T10:13:04" hostname="LAPTOP-4A2JVML7" time="5.77">
   <properties/>
-  <testcase name="groupCreationTests" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="6.174">
-    <failure message="java.lang.AssertionError: Sets differ: expected [GroupData{id='79', name=''}, GroupData{id='78', name=''}, GroupData{id='77', name=''}, GroupData{id='71', name=''}] but got [GroupData{id='78', name=''}, GroupData{id='77', name=''}, GroupData{id='79', name='group2'}, GroupData{id='71', name=''}]" type="java.lang.AssertionError">java.lang.AssertionError: Sets differ: expected [GroupData{id='79', name=''}, GroupData{id='78', name=''}, GroupData{id='77', name=''}, GroupData{id='71', name=''}] but got [GroupData{id='78', name=''}, GroupData{id='77', name=''}, GroupData{id='79', name='group2'}, GroupData{id='71', name=''}]
+  <testcase name="groupCreationTests" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="5.77">
+    <failure message="java.lang.AssertionError: Lists differ at element [6]: GroupData{id='82', name=''} != GroupData{id='2147483647', name='group2'} expected [GroupData{id='82', name=''}] but found [GroupData{id='2147483647', name='group2'}]" type="java.lang.AssertionError">java.lang.AssertionError: Lists differ at element [6]: GroupData{id='82', name=''} != GroupData{id='2147483647', name='group2'} expected [GroupData{id='82', name=''}] but found [GroupData{id='2147483647', name='group2'}]
 	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEquals(Assert.java:1266)
-	at org.testng.Assert.assertEquals(Assert.java:1246)
-	at ru.stqa.pft.addressbook.tests.GroupCreationTests.groupCreationTests(GroupCreationTests.java:27)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:993)
+	at ru.stqa.pft.addressbook.tests.GroupCreationTests.groupCreationTests(GroupCreationTests.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,11 +66,11 @@
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 30404
+Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 47243
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-авг 19, 2020 12:52:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+авг 19, 2020 1:13:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
