@@ -84,8 +84,7 @@ public class GroupHelper extends HelperBase{
             String str_par = element.getAttribute("title").substring(8);
             String name = str_par.substring(0, str_par.length() - 1);
             int id = Integer.parseInt(element.getAttribute("value"));
-            GroupData group = new GroupData(id, name, null, null);
-            groups.add(group);
+            groups.add(new GroupData().withId(id).withName(name));
         }
         return groups;
     }
