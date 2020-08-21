@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.GroupModificationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-08-21T14:32:39" hostname="LAPTOP-4A2JVML7" time="0.772">
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupModificationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-08-21T15:57:27" hostname="LAPTOP-4A2JVML7" time="0.649">
   <properties/>
-  <testcase name="groupModification" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="0.772">
-    <failure message="java.lang.AssertionError: Sets differ: expected [GroupData{id='89', name='4344'}] but got [GroupData{id='89', name='group11111'}]" type="java.lang.AssertionError">java.lang.AssertionError: Sets differ: expected [GroupData{id='89', name='4344'}] but got [GroupData{id='89', name='group11111'}]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEquals(Assert.java:1266)
-	at org.testng.Assert.assertEquals(Assert.java:1246)
-	at ru.stqa.pft.addressbook.tests.GroupModificationTests.groupModification(GroupModificationTests.java:31)
+  <testcase name="groupModification" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="0.649">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;[GroupData{id='89', name='group11111'}]&gt;&#13;&#10;     but: was &lt;[GroupData{id='89', name='4344'}]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;[GroupData{id='89', name='group11111'}]&gt;
+     but: was &lt;[GroupData{id='89', name='4344'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.stqa.pft.addressbook.tests.GroupModificationTests.groupModification(GroupModificationTests.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
