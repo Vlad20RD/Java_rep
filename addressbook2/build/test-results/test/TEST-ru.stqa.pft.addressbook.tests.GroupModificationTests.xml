@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.GroupModificationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-08-21T15:57:27" hostname="LAPTOP-4A2JVML7" time="0.649">
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupModificationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-08-21T16:07:03" hostname="LAPTOP-4A2JVML7" time="0.489">
   <properties/>
-  <testcase name="groupModification" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="0.649">
+  <testcase name="groupModification" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="0.489">
     <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;[GroupData{id='89', name='group11111'}]&gt;&#13;&#10;     but: was &lt;[GroupData{id='89', name='4344'}]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
 Expected: &lt;[GroupData{id='89', name='group11111'}]&gt;
      but: was &lt;[GroupData{id='89', name='4344'}]&gt;
