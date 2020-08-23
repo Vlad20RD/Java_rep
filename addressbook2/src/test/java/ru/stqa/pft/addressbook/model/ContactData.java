@@ -7,6 +7,11 @@ public class ContactData {
     private String group;
     private String homePhone;
     private String mobilePhone;
+    private String workPhone;
+
+    public ContactData() {
+
+    }
 
     public String getWorkPhone() {
         return workPhone;
@@ -34,10 +39,6 @@ public class ContactData {
         this.homePhone = homePhone;
         return this;
     }
-
-    private String workPhone;
-
-
 
     public ContactData(String firstname, String lastname, String group) {
         this.firstname = firstname;
