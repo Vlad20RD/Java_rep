@@ -5,12 +5,12 @@ import ru.stqa.pft.addressbook.model.ContactData;
 
 public class ContactCreationTests extends TestBase {
 
-    @Test(enabled = false)
+    @Test
     public void contactCreationTests() {
         app.goTo().goToContactCreation();
-        app.getContactHelper().initContactCreation();
-        app.getContactHelper().fillContactForm(new ContactData("Vlad", "Vlasov", "group1"), true);
-        app.getContactHelper().submitContactCreation();
+        app.contact().initContactCreation();
+        app.contact().fillContactForm(new ContactData("Vlad", "Vlasov", "group1"), true);
+        app.contact().submitContactCreation();
     }
 
 }
