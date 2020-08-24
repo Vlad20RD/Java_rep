@@ -25,15 +25,15 @@ public class ContactHelper extends HelperBase{
     public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
+        attach(By.name("photo"), contactData.getPhoto());
 
-        if(creation){
+        if (creation) {
             if (contactData.getGroup() != null) {
                 new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
             }
-        } else{
+        } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
-
     }
 
     public void initContactCreation() {
