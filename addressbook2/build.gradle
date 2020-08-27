@@ -15,6 +15,7 @@ dependencies {
     //implementation 'com.thoughtworks.xstream:xstream:1.4.12-java7'
     implementation 'com.thoughtworks.xstream:xstream:1.4.12'
     implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'ch.qos.logback:logback-parent:1.2.3'
 }
 
 test{
