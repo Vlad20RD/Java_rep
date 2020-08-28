@@ -1,0 +1,3 @@
+.SQLException: Unknown database 'addressbook'
+SQLState: 42000
+VendorError: 1049
