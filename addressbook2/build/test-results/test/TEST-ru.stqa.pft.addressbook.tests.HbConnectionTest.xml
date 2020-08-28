@@ -1,53 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.HbConnectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-28T16:20:29" hostname="LAPTOP-4A2JVML7" time="30.678">
+<testsuite name="ru.stqa.pft.addressbook.tests.HbConnectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-28T17:36:49" hostname="LAPTOP-4A2JVML7" time="0.42">
   <properties/>
-  <testcase name="testHbConnection" classname="ru.stqa.pft.addressbook.tests.HbConnectionTest" time="30.678"/>
-  <system-out><![CDATA[Hibernate: select groupdata0_.group_id as group_id1_0_, groupdata0_.group_footer as group_fo2_0_, groupdata0_.group_header as group_he3_0_, groupdata0_.group_name as group_na4_0_ from group_list groupdata0_
-GroupData{id='89', name='4344'}
-GroupData{id='130', name='test 2'}
-GroupData{id='131', name='test 3'}
-GroupData{id='132', name='test 4'}
-GroupData{id='137', name='test 1'}
-GroupData{id='138', name='test 2'}
-GroupData{id='139', name='test 0'}
-GroupData{id='140', name='test 1'}
-GroupData{id='141', name='test 2'}
-GroupData{id='145', name='test 0'}
-GroupData{id='146', name='test 1'}
-GroupData{id='147', name='test 2'}
-GroupData{id='148', name='test 0'}
-GroupData{id='149', name='test 1'}
-GroupData{id='150', name='test 2'}
-GroupData{id='151', name='test 0'}
-GroupData{id='152', name='test 1'}
-GroupData{id='153', name='test 2'}
-GroupData{id='154', name='test 0'}
-GroupData{id='155', name='test 1'}
-GroupData{id='156', name='test 2'}
-GroupData{id='157', name='test 0'}
-GroupData{id='158', name='test 1'}
-GroupData{id='159', name='test 2'}
+  <testcase name="testHbConnection" classname="ru.stqa.pft.addressbook.tests.HbConnectionTest" time="0.42"/>
+  <system-out><![CDATA[Hibernate: select contactdat0_.id as id1_0_, contactdat0_.firstname as firstnam2_0_, contactdat0_.home as home3_0_, contactdat0_.lastname as lastname4_0_, contactdat0_.mobile as mobile5_0_, contactdat0_.photo as photo6_0_, contactdat0_.work as work7_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+ContactData{id=12, firstname='VladVladVladtest_surname', lastname='Vlasov2VlasovVlasov'}
+ContactData{id=21, firstname='test_surname', lastname='test_surname'}
+ContactData{id=22, firstname='test_surname', lastname='test_surname'}
+ContactData{id=23, firstname='test_surname', lastname='test_surname'}
+ContactData{id=24, firstname='test_surname', lastname='test_surname'}
+ContactData{id=25, firstname='test_surname', lastname='test_surname'}
+ContactData{id=26, firstname='test_name', lastname='test_surname'}
+ContactData{id=27, firstname='test_name', lastname='test_surname'}
+ContactData{id=28, firstname='test_name', lastname='test_surname'}
+ContactData{id=29, firstname='test_name', lastname='test_surname'}
+ContactData{id=30, firstname='test_name', lastname='test_surname'}
+ContactData{id=31, firstname='test_name', lastname='test_surname'}
 ]]></system-out>
-  <system-err><![CDATA[авг 28, 2020 7:20:18 PM org.hibernate.Version logVersion
+  <system-err><![CDATA[авг 28, 2020 8:36:46 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate ORM core version 5.4.21.Final
-авг 28, 2020 7:20:19 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+авг 28, 2020 8:36:47 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
 INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-авг 28, 2020 7:20:19 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+авг 28, 2020 8:36:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
 Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
-авг 28, 2020 7:20:19 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+авг 28, 2020 8:36:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:/test]
-авг 28, 2020 7:20:19 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+авг 28, 2020 8:36:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {user=root, password=****}
-авг 28, 2020 7:20:19 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+авг 28, 2020 8:36:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-авг 28, 2020 7:20:19 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+авг 28, 2020 8:36:47 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
-авг 28, 2020 7:20:20 PM org.hibernate.dialect.Dialect <init>
+авг 28, 2020 8:36:47 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-авг 28, 2020 7:20:28 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6843bc3c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-авг 28, 2020 7:20:29 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+авг 28, 2020 8:36:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7314de40] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+авг 28, 2020 8:36:49 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 ]]></system-err>
 </testsuite>
