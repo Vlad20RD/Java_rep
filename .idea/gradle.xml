@@ -5,6 +5,16 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$USER_HOME$/Desktop/java_pft-master" />
+        <option name="modules">
+          <set>
+            <option value="$USER_HOME$/Desktop/java_pft-master" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/SemplName" />
         <option name="modules">
           <set>
@@ -25,10 +35,30 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/mantis-tests" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/sandbox" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/test_modul" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/test_modul" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />
